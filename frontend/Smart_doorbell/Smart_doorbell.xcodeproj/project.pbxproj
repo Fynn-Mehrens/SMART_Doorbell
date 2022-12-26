@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BA36B6F2949DC4700213E01 /* Smart_doorbellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA36B6E2949DC4700213E01 /* Smart_doorbellApp.swift */; };
+		9BA36B712949DC4700213E01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA36B702949DC4700213E01 /* ContentView.swift */; };
+		9BA36B772949DC4800213E01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA36B762949DC4800213E01 /* Preview Assets.xcassets */; };
+		9BA36B812949DC4900213E01 /* Smart_doorbellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA36B802949DC4900213E01 /* Smart_doorbellTests.swift */; };
+		9BA36B8B2949DC4900213E01 /* Smart_doorbellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA36B8A2949DC4900213E01 /* Smart_doorbellUITests.swift */; };
+		9BA36B8D2949DC4900213E01 /* Smart_doorbellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA36B8C2949DC4900213E01 /* Smart_doorbellUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BA36B7D2949DC4900213E01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BA36B632949DC4700213E01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BA36B6A2949DC4700213E01;
+			remoteInfo = Smart_doorbell;
+		};
+		9BA36B872949DC4900213E01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BA36B632949DC4700213E01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BA36B6A2949DC4700213E01;
+			remoteInfo = Smart_doorbell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9BA36B6B2949DC4700213E01 /* Smart_doorbell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smart_doorbell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA36B6E2949DC4700213E01 /* Smart_doorbellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_doorbellApp.swift; sourceTree = "<group>"; };
+		9BA36B702949DC4700213E01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9BA36B742949DC4800213E01 /* Smart_doorbell.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Smart_doorbell.entitlements; sourceTree = "<group>"; };
+		9BA36B762949DC4800213E01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9BA36B7C2949DC4900213E01 /* Smart_doorbellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Smart_doorbellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA36B802949DC4900213E01 /* Smart_doorbellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_doorbellTests.swift; sourceTree = "<group>"; };
+		9BA36B862949DC4900213E01 /* Smart_doorbellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Smart_doorbellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BA36B8A2949DC4900213E01 /* Smart_doorbellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_doorbellUITests.swift; sourceTree = "<group>"; };
+		9BA36B8C2949DC4900213E01 /* Smart_doorbellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_doorbellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BA36B682949DC4700213E01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA36B792949DC4900213E01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA36B832949DC4900213E01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BA36B622949DC4700213E01 = {
+			isa = PBXGroup;
+			children = (
+				9BA36B6D2949DC4700213E01 /* Smart_doorbell */,
+				9BA36B7F2949DC4900213E01 /* Smart_doorbellTests */,
+				9BA36B892949DC4900213E01 /* Smart_doorbellUITests */,
+				9BA36B6C2949DC4700213E01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BA36B6C2949DC4700213E01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BA36B6B2949DC4700213E01 /* Smart_doorbell.app */,
+				9BA36B7C2949DC4900213E01 /* Smart_doorbellTests.xctest */,
+				9BA36B862949DC4900213E01 /* Smart_doorbellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BA36B6D2949DC4700213E01 /* Smart_doorbell */ = {
+			isa = PBXGroup;
+			children = (
+				9BA36B6E2949DC4700213E01 /* Smart_doorbellApp.swift */,
+				9BA36B702949DC4700213E01 /* ContentView.swift */,
+				9BA36B742949DC4800213E01 /* Smart_doorbell.entitlements */,
+				9BA36B752949DC4800213E01 /* Preview Content */,
+			);
+			path = Smart_doorbell;
+			sourceTree = "<group>";
+		};
+		9BA36B752949DC4800213E01 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9BA36B762949DC4800213E01 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9BA36B7F2949DC4900213E01 /* Smart_doorbellTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BA36B802949DC4900213E01 /* Smart_doorbellTests.swift */,
+			);
+			path = Smart_doorbellTests;
+			sourceTree = "<group>";
+		};
+		9BA36B892949DC4900213E01 /* Smart_doorbellUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9BA36B8A2949DC4900213E01 /* Smart_doorbellUITests.swift */,
+				9BA36B8C2949DC4900213E01 /* Smart_doorbellUITestsLaunchTests.swift */,
+			);
+			path = Smart_doorbellUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BA36B6A2949DC4700213E01 /* Smart_doorbell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BA36B902949DC4900213E01 /* Build configuration list for PBXNativeTarget "Smart_doorbell" */;
+			buildPhases = (
+				9BA36B672949DC4700213E01 /* Sources */,
+				9BA36B682949DC4700213E01 /* Frameworks */,
+				9BA36B692949DC4700213E01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Smart_doorbell;
+			productName = Smart_doorbell;
+			productReference = 9BA36B6B2949DC4700213E01 /* Smart_doorbell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BA36B7B2949DC4900213E01 /* Smart_doorbellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BA36B932949DC4900213E01 /* Build configuration list for PBXNativeTarget "Smart_doorbellTests" */;
+			buildPhases = (
+				9BA36B782949DC4900213E01 /* Sources */,
+				9BA36B792949DC4900213E01 /* Frameworks */,
+				9BA36B7A2949DC4900213E01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BA36B7E2949DC4900213E01 /* PBXTargetDependency */,
+			);
+			name = Smart_doorbellTests;
+			productName = Smart_doorbellTests;
+			productReference = 9BA36B7C2949DC4900213E01 /* Smart_doorbellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9BA36B852949DC4900213E01 /* Smart_doorbellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BA36B962949DC4900213E01 /* Build configuration list for PBXNativeTarget "Smart_doorbellUITests" */;
+			buildPhases = (
+				9BA36B822949DC4900213E01 /* Sources */,
+				9BA36B832949DC4900213E01 /* Frameworks */,
+				9BA36B842949DC4900213E01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BA36B882949DC4900213E01 /* PBXTargetDependency */,
+			);
+			name = Smart_doorbellUITests;
+			productName = Smart_doorbellUITests;
+			productReference = 9BA36B862949DC4900213E01 /* Smart_doorbellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BA36B632949DC4700213E01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					9BA36B6A2949DC4700213E01 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					9BA36B7B2949DC4900213E01 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9BA36B6A2949DC4700213E01;
+					};
+					9BA36B852949DC4900213E01 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9BA36B6A2949DC4700213E01;
+					};
+				};
+			};
+			buildConfigurationList = 9BA36B662949DC4700213E01 /* Build configuration list for PBXProject "Smart_doorbell" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BA36B622949DC4700213E01;
+			productRefGroup = 9BA36B6C2949DC4700213E01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BA36B6A2949DC4700213E01 /* Smart_doorbell */,
+				9BA36B7B2949DC4900213E01 /* Smart_doorbellTests */,
+				9BA36B852949DC4900213E01 /* Smart_doorbellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BA36B692949DC4700213E01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA36B772949DC4800213E01 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA36B7A2949DC4900213E01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA36B842949DC4900213E01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BA36B672949DC4700213E01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA36B712949DC4700213E01 /* ContentView.swift in Sources */,
+				9BA36B6F2949DC4700213E01 /* Smart_doorbellApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA36B782949DC4900213E01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA36B812949DC4900213E01 /* Smart_doorbellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BA36B822949DC4900213E01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA36B8B2949DC4900213E01 /* Smart_doorbellUITests.swift in Sources */,
+				9BA36B8D2949DC4900213E01 /* Smart_doorbellUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BA36B7E2949DC4900213E01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BA36B6A2949DC4700213E01 /* Smart_doorbell */;
+			targetProxy = 9BA36B7D2949DC4900213E01 /* PBXContainerItemProxy */;
+		};
+		9BA36B882949DC4900213E01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BA36B6A2949DC4700213E01 /* Smart_doorbell */;
+			targetProxy = 9BA36B872949DC4900213E01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9BA36B8E2949DC4900213E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BA36B8F2949DC4900213E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9BA36B912949DC4900213E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Smart_doorbell/Smart_doorbell.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Smart_doorbell/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fontys.Smart-doorbell";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BA36B922949DC4900213E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Smart_doorbell/Smart_doorbell.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Smart_doorbell/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fontys.Smart-doorbell";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BA36B942949DC4900213E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fontys.Smart-doorbellTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart_doorbell.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Smart_doorbell";
+			};
+			name = Debug;
+		};
+		9BA36B952949DC4900213E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fontys.Smart-doorbellTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smart_doorbell.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Smart_doorbell";
+			};
+			name = Release;
+		};
+		9BA36B972949DC4900213E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fontys.Smart-doorbellUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Smart_doorbell;
+			};
+			name = Debug;
+		};
+		9BA36B982949DC4900213E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fontys.Smart-doorbellUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Smart_doorbell;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BA36B662949DC4700213E01 /* Build configuration list for PBXProject "Smart_doorbell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA36B8E2949DC4900213E01 /* Debug */,
+				9BA36B8F2949DC4900213E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BA36B902949DC4900213E01 /* Build configuration list for PBXNativeTarget "Smart_doorbell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA36B912949DC4900213E01 /* Debug */,
+				9BA36B922949DC4900213E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BA36B932949DC4900213E01 /* Build configuration list for PBXNativeTarget "Smart_doorbellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA36B942949DC4900213E01 /* Debug */,
+				9BA36B952949DC4900213E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BA36B962949DC4900213E01 /* Build configuration list for PBXNativeTarget "Smart_doorbellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BA36B972949DC4900213E01 /* Debug */,
+				9BA36B982949DC4900213E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BA36B632949DC4700213E01 /* Project object */;
+}
