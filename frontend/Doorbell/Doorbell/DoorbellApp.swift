@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct DoorbellApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+    @StateObject var userStateViewModel = UserStateViewModel()
+
+        var body: some Scene {
+            WindowGroup {
+                NavigationView{
+                    ApplicationSwitcher()
+                }
+                .navigationViewStyle(.stack)
+                .environmentObject(userStateViewModel)
+            }
         }
-    }
 }
