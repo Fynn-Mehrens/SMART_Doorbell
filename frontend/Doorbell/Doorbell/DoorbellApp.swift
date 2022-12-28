@@ -13,9 +13,7 @@ struct DoorbellApp: App {
 
         var body: some Scene {
             WindowGroup {
-                NavigationView{
                     ApplicationSwitcher()
-                }
                 .navigationViewStyle(.stack)
                 .environmentObject(userStateViewModel)
             }
