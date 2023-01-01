@@ -1,8 +1,8 @@
 //
-//  Control.swift
+//  IconButton.swift
 //  Doorbell
 //
-//  Created by Cora Bleier on 28.12.22.
+//  Created by Cora Bleier on 01.01.23.
 //
 
 import SwiftUI
@@ -18,5 +18,11 @@ struct IconButton: View {
         .frame(height: 44)
         .background(Color.white.opacity(0.09))
         .clipShape(RoundedRectangle(cornerRadius: 10))
+    }
+}
+
+struct IconButton_Previews: PreviewProvider {
+    static var previews: some View {
+        IconButton(icon: "bell.fill", text: "TEST")
     }
 }

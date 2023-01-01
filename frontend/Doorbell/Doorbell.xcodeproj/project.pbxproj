@@ -42,9 +42,7 @@
 		9BB49BF62959C1BD0009D111 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49BF52959C1BD0009D111 /* LoginScreen.swift */; };
 		9BB49BF82959C6F50009D111 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49BF72959C6F50009D111 /* ContentView.swift */; };
 		9BB49BFA295CBBB90009D111 /* ActionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49BF9295CBBB90009D111 /* ActionModel.swift */; };
-		9BB49BFD295CBC0F0009D111 /* ActionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49BFC295CBC0F0009D111 /* ActionComponent.swift */; };
-		9BB49BFF295CBC290009D111 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49BFE295CBC290009D111 /* Home.swift */; };
-		9BB49C01295CBC470009D111 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49C00295CBC470009D111 /* Control.swift */; };
+		9BB49BFD295CBC0F0009D111 /* ActionNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49BFC295CBC0F0009D111 /* ActionNotification.swift */; };
 		9BB49C03295CBC720009D111 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49C02295CBC720009D111 /* ControlsView.swift */; };
 		9BB49C05295CBC910009D111 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49C04295CBC910009D111 /* SettingsView.swift */; };
 		9BB49C07295CBCA50009D111 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49C06295CBCA50009D111 /* LockView.swift */; };
@@ -56,6 +54,11 @@
 		9BB49C17295CC1B60009D111 /* AllSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49C16295CC1B60009D111 /* AllSettingsView.swift */; };
 		9BB49C19295CC5F30009D111 /* ActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49C18295CC5F30009D111 /* ActionsView.swift */; };
 		9BB49C1B295CC60F0009D111 /* HomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49C1A295CC60F0009D111 /* HomeHeader.swift */; };
+		9BB49C202961E2B30009D111 /* ActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49C1F2961E2B30009D111 /* ActionItem.swift */; };
+		9BB49C222961E2F80009D111 /* ActionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49C212961E2F80009D111 /* ActionViewHeader.swift */; };
+		9BB49C242961E3400009D111 /* GeneralButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49C232961E3400009D111 /* GeneralButton.swift */; };
+		9BB49C262961E5C40009D111 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49C252961E5C40009D111 /* IconButton.swift */; };
+		9BB49C282961F0600009D111 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49C272961F0600009D111 /* ProfilView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,9 +106,7 @@
 		9BB49BF52959C1BD0009D111 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		9BB49BF72959C6F50009D111 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9BB49BF9295CBBB90009D111 /* ActionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionModel.swift; sourceTree = "<group>"; };
-		9BB49BFC295CBC0F0009D111 /* ActionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionComponent.swift; sourceTree = "<group>"; };
-		9BB49BFE295CBC290009D111 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		9BB49C00295CBC470009D111 /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		9BB49BFC295CBC0F0009D111 /* ActionNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionNotification.swift; sourceTree = "<group>"; };
 		9BB49C02295CBC720009D111 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 		9BB49C04295CBC910009D111 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9BB49C06295CBCA50009D111 /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
@@ -117,6 +118,11 @@
 		9BB49C16295CC1B60009D111 /* AllSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSettingsView.swift; sourceTree = "<group>"; };
 		9BB49C18295CC5F30009D111 /* ActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsView.swift; sourceTree = "<group>"; };
 		9BB49C1A295CC60F0009D111 /* HomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeader.swift; sourceTree = "<group>"; };
+		9BB49C1F2961E2B30009D111 /* ActionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionItem.swift; sourceTree = "<group>"; };
+		9BB49C212961E2F80009D111 /* ActionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewHeader.swift; sourceTree = "<group>"; };
+		9BB49C232961E3400009D111 /* GeneralButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralButton.swift; sourceTree = "<group>"; };
+		9BB49C252961E5C40009D111 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		9BB49C272961F0600009D111 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,7 @@
 				9BB49C02295CBC720009D111 /* ControlsView.swift */,
 				9BB49C04295CBC910009D111 /* SettingsView.swift */,
 				9BB49C06295CBCA50009D111 /* LockView.swift */,
+				9BB49C272961F0600009D111 /* ProfilView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -254,9 +261,6 @@
 		9BB49BFB295CBC010009D111 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				9BB49BFC295CBC0F0009D111 /* ActionComponent.swift */,
-				9BB49BFE295CBC290009D111 /* Home.swift */,
-				9BB49C00295CBC470009D111 /* Control.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -267,6 +271,11 @@
 				9BB49C18295CC5F30009D111 /* ActionsView.swift */,
 				9BB49C16295CC1B60009D111 /* AllSettingsView.swift */,
 				9BB49C1A295CC60F0009D111 /* HomeHeader.swift */,
+				9BB49C1F2961E2B30009D111 /* ActionItem.swift */,
+				9BB49C212961E2F80009D111 /* ActionViewHeader.swift */,
+				9BB49BFC295CBC0F0009D111 /* ActionNotification.swift */,
+				9BB49C232961E3400009D111 /* GeneralButton.swift */,
+				9BB49C252961E5C40009D111 /* IconButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -402,11 +411,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B37E7B52959A7040093271B /* Prescence.swift in Sources */,
+				9BB49C282961F0600009D111 /* ProfilView.swift in Sources */,
 				9BB49C05295CBC910009D111 /* SettingsView.swift in Sources */,
-				9BB49BFD295CBC0F0009D111 /* ActionComponent.swift in Sources */,
-				9BB49C01295CBC470009D111 /* Control.swift in Sources */,
+				9BB49BFD295CBC0F0009D111 /* ActionNotification.swift in Sources */,
 				9BB49C19295CC5F30009D111 /* ActionsView.swift in Sources */,
-				9BB49BFF295CBC290009D111 /* Home.swift in Sources */,
+				9BB49C242961E3400009D111 /* GeneralButton.swift in Sources */,
 				9BB49C17295CC1B60009D111 /* AllSettingsView.swift in Sources */,
 				9BB49C0B295CBD120009D111 /* Utils.swift in Sources */,
 				9BB49C0D295CBD250009D111 /* Blur.swift in Sources */,
@@ -418,10 +427,13 @@
 				9B37E7A62959A5F20093271B /* Localization.swift in Sources */,
 				9B37E7A02959A55E0093271B /* Action.swift in Sources */,
 				9B37E7A92959A6250093271B /* Image.swift in Sources */,
+				9BB49C222961E2F80009D111 /* ActionViewHeader.swift in Sources */,
+				9BB49C202961E2B30009D111 /* ActionItem.swift in Sources */,
 				9B37E7AC2959A6890093271B /* Lazy.swift in Sources */,
 				9BB49C03295CBC720009D111 /* ControlsView.swift in Sources */,
 				9BB49C1B295CC60F0009D111 /* HomeHeader.swift in Sources */,
 				9B37E79A2959A3FD0093271B /* Colors.swift in Sources */,
+				9BB49C262961E5C40009D111 /* IconButton.swift in Sources */,
 				9B37E78329599EC80093271B /* Geometry.swift in Sources */,
 				9BB49BF42959B7CC0009D111 /* ApplicationSwitcher.swift in Sources */,
 				9BB49BF62959C1BD0009D111 /* LoginScreen.swift in Sources */,

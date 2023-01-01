@@ -19,40 +19,33 @@ struct ContentView: View {
         } else {
             NavigationView {
                 VStack{
+                    ImageView()
                     HomeHeader()
                         .padding()
                     Divider()
                         .background(Color.white)
-                        .opacity(0.4)
-                    ActionsView(open: $openNotification, title: "Quick Shortcuts", items: quickShortcuts, sTitle: $title, sIcon: $icon)
+                        .opacity(0.5)
+                    ActionsView(open: $openNotification, sTitle: $title, sIcon: $icon, title: "Menu", items: menuItems)
                         .padding()
                     Divider()
                         .background(Color.white)
                         .opacity(0.4)
-                    ActionsView(open: $openNotification, title: "Recent Actions", items: recentItems, sTitle: $title, sIcon: $icon)
-                        .padding()
-                    Divider()
-                        .background(Color.white)
-                        .opacity(0.4)
-                    /*
-                     if openNotification {
-                     if (title == "Media Controls"){
-                     MediaPlayerWidget()
-                     .zIndex(1)
-                     .transition(.move(edge: .bottom))
-                     }
-                     else if (title == "Charging"){
-                     ChargingWidget(open: $openNotification)
-                     .zIndex(1)
-                     .transition(.move(edge: .bottom))
-                     }
-                     else {
-                     ActionNotification(open: $openNotification, icon: icon, text: title)
-                     .zIndex(1)
-                     .transition(.move(edge: .bottom))
-                     }
-                     }
-                     */
+                    
+                    if openNotification {
+                        if (title == "Profil") {
+                            NavigationLink("Show Profil") {
+                                ProfilView(profilName: "Max Mustermann")
+                            }
+                        } else if (title == "Notifications") {
+                            NavigationLink("Show Notification Settings") {
+                                ProfilView(profilName: "Max Mustermann")
+                            }
+                        } else {
+                            ActionNotification(open: $openNotification, icon: icon, text: title)
+                                .zIndex(1)
+                                .transition(.move(edge: .bottom))
+                        }
+                    }
                 }
                 .navigationBarTitle(Text("Doorbell Settings"), displayMode: .inline)
             }

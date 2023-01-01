@@ -9,14 +9,15 @@ import SwiftUI
 
 struct ActionsView: View {
     @Binding var open: Bool
+    @Binding var sTitle: String
+    @Binding var sIcon: String
     var title: String
     var items: [ActionModel]
     
-    @Binding var sTitle: String
-    @Binding var sIcon: String
     var body: some View {
         VStack(alignment: .leading) {
             ActionViewHeader(title: title)
+                .padding()
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top){
                     ForEach(items, id: \.self){ item in
@@ -30,17 +31,14 @@ struct ActionsView: View {
                             ActionItem(icon: item.icon, text: item.text)
                         }
                     }
-                    
-                    
                 }
             }
-            
         }
     }
 }
 
 struct ActionView_Previews: PreviewProvider {
     static var previews: some View {
-        ActionsView(open: .constant(true), title: "Test", items: [], sTitle: .constant("Test"), sIcon: .constant("bell.fill"))
+        ActionsView(open: .constant(true), sTitle: .constant("Test"), sIcon: .constant("bell.fill"), title: "Title", items: menuItems)
     }
 }

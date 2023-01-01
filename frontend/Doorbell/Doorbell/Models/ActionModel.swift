@@ -12,6 +12,12 @@ struct ActionModel: Hashable {
     var text: String
 }
 
+let menuItems: [ActionModel] = [
+    ActionModel(icon: "person.circle.fill", text: "Profil"),
+    ActionModel(icon: "bell.fill", text: "Notifications"),
+    ActionModel(icon: "power.circle.fill", text: "Activate/Deactivate")
+]
+
 let quickShortcuts: [ActionModel] = [
     ActionModel(icon: "questionmark", text: "Test"),
     ActionModel(icon: "questionmark", text: "Test"),
