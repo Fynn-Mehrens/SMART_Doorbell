@@ -19,9 +19,8 @@ var menuViews: [AnyView] = [
     AnyView(ProfilView(profilName: profilName)),
     AnyView(SettingsView()),
     AnyView(Text("Subscribe")),
-    AnyView(Text("Activate/Deactivate"))
+    AnyView(ControlsView())
 ]
-
 
 let menuItems: [Item] = [
     Item(icon: "person.circle.fill", text: "Profil"),
