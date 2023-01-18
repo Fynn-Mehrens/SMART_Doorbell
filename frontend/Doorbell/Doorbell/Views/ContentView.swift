@@ -9,9 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var vm: UserStateViewModel
-    @State private var openNotification = false
-    @State private var title = ""
     @State private var icon = ""
+    @State private var text = ""
     var profilName: String
     
     var body: some View {
@@ -20,39 +19,37 @@ struct ContentView: View {
         } else {
             NavigationView {
                 VStack{
-                    ImageView()
-                    HomeHeader(profilName: profilName)
-                        .padding()
-                    Divider()
-                        .background(Color.white)
-                        .opacity(0.4)
-                    ActionsView(open: $openNotification, sTitle: $title, sIcon: $icon, title: "Menu", items: menuItems)
+                    ImageView().padding()
+                    Text(profilName)
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.white)
+                    
                     Divider()
                         .background(Color.white)
                         .opacity(0.4)
                     
-                    if openNotification {
-                        if (title == "Profil") {
-                            NavigationLink("Show Profil") {
-                                ProfilView(profilName: profilName)
+                    List {
+                        Menu(sIcon: $icon, sText: $text, views: menuViews, items: menuItems)
+                        Button(action: {
+                            Task.init {
+                                await vm.signOut()
                             }
-                        } else if (title == "Notifications") {
-                            NavigationLink("Show Notification Settings") {
-                                SettingsView()
+                            
+                        }) {
+                            HStack {
+                                Image(systemName: "rectangle.portrait.and.arrow.forward")
+                                    .imageScale(.large)
+                                    .frame(width: 44, height: 44)
+                                Text("Logout")
+                                
                             }
-                        } else if (title == "Logout") {
-                            //Task{
-                                //await vm.signOut()
-                            //}
-                        } else {
-                            ActionNotification(open: $openNotification, icon: icon, text: title)
-                                .zIndex(1)
-                                .transition(.move(edge: .bottom))
-                        }
-                    }
+                        }.foregroundColor(Color.white)
+                        
+                    }.scrollDisabled(true)
                 }
                 .navigationBarTitle(Text("Doorbell Settings"), displayMode: .inline)
-            }
+            }.navigationBarTitle("Menu")
         }
     }
 }

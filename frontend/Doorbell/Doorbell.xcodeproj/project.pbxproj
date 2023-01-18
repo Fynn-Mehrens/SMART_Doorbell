@@ -37,6 +37,7 @@
 		9BA36BBA2949E0AC00213E01 /* DoorbellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA36BB92949E0AC00213E01 /* DoorbellTests.swift */; };
 		9BA36BC42949E0AC00213E01 /* DoorbellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA36BC32949E0AC00213E01 /* DoorbellUITests.swift */; };
 		9BA36BC62949E0AC00213E01 /* DoorbellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA36BC52949E0AC00213E01 /* DoorbellUITestsLaunchTests.swift */; };
+		9BAC07C929784AEF006EBB12 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC07C829784AEF006EBB12 /* MenuItem.swift */; };
 		9BB49BF22959B7870009D111 /* UserStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49BF12959B7870009D111 /* UserStateViewModel.swift */; };
 		9BB49BF42959B7CC0009D111 /* ApplicationSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49BF32959B7CC0009D111 /* ApplicationSwitcher.swift */; };
 		9BB49BF62959C1BD0009D111 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49BF52959C1BD0009D111 /* LoginScreen.swift */; };
@@ -100,6 +101,7 @@
 		9BA36BBF2949E0AC00213E01 /* DoorbellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoorbellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA36BC32949E0AC00213E01 /* DoorbellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorbellUITests.swift; sourceTree = "<group>"; };
 		9BA36BC52949E0AC00213E01 /* DoorbellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorbellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9BAC07C829784AEF006EBB12 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		9BB49BF12959B7870009D111 /* UserStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateViewModel.swift; sourceTree = "<group>"; };
 		9BB49BF32959B7CC0009D111 /* ApplicationSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSwitcher.swift; sourceTree = "<group>"; };
 		9BB49BF52959C1BD0009D111 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -220,7 +222,6 @@
 			children = (
 				9BA36BA72949E0AA00213E01 /* DoorbellApp.swift */,
 				9B37E78029599E900093271B /* Views */,
-				9BB49BFB295CBC010009D111 /* Components */,
 				9B37E7BA2959A8350093271B /* Models */,
 				9B37E78129599E9E0093271B /* Extensions */,
 				9BA36BAB2949E0AB00213E01 /* Assets.xcassets */,
@@ -255,13 +256,6 @@
 			path = DoorbellUITests;
 			sourceTree = "<group>";
 		};
-		9BB49BFB295CBC010009D111 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
 		9BB49C1C295CC62C0009D111 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +267,7 @@
 				9BB49BFC295CBC0F0009D111 /* ActionNotification.swift */,
 				9BB49C232961E3400009D111 /* GeneralButton.swift */,
 				9BB49C252961E5C40009D111 /* IconButton.swift */,
+				9BAC07C829784AEF006EBB12 /* MenuItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -421,6 +416,7 @@
 				9BB49BFA295CBBB90009D111 /* ActionModel.swift in Sources */,
 				9B37E7A32959A59C0093271B /* String.swift in Sources */,
 				9B37E7A62959A5F20093271B /* Localization.swift in Sources */,
+				9BAC07C929784AEF006EBB12 /* MenuItem.swift in Sources */,
 				9B37E7A02959A55E0093271B /* Action.swift in Sources */,
 				9B37E7A92959A6250093271B /* Image.swift in Sources */,
 				9BB49C222961E2F80009D111 /* ActionViewHeader.swift in Sources */,

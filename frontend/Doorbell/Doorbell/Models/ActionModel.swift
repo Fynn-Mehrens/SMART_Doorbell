@@ -12,7 +12,7 @@ struct ActionModel: Hashable {
     var text: String
 }
 
-let menuItems: [ActionModel] = [
+let menuItem: [ActionModel] = [
     ActionModel(icon: "person.circle.fill", text: "Profil"),
     ActionModel(icon: "bell.fill", text: "Notifications"),
     ActionModel(icon: "gearshape.fill", text: "Subscribe"),

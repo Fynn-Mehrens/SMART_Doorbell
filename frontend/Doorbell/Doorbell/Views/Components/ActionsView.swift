@@ -36,9 +36,3 @@ struct ActionsView: View {
         }
     }
 }
-
-struct ActionView_Previews: PreviewProvider {
-    static var previews: some View {
-        ActionsView(open: .constant(true), sTitle: .constant("Test"), sIcon: .constant("bell.fill"), title: "Title", items: menuItems)
-    }
-}

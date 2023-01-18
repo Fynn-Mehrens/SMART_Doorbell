@@ -61,6 +61,7 @@ struct LoginScreen: View {@EnvironmentObject var vm: UserStateViewModel
             }else{
                 WelcomeText()
                 ImageView()
+                    .padding(.bottom, 75)
                 EmailInput()
                 PasswordInput()
                 LoginButton()
@@ -88,7 +89,6 @@ struct ImageView: View {
             .frame(width: 150, height: 150)
             .clipped()
             .cornerRadius(150)
-            .padding(.bottom, 75)
     }
 }
 
