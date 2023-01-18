@@ -15,8 +15,13 @@ doorbell_ring = smart_doorbell_client.inherit('DoorbellRing', {
                                                                                     'file'),
 })
 
+
 @smart_doorbell_client.route("/doorbell_ring")
 class DoorbellRing(Resource):
+    """
+    This endpoint is used on the application client side.
+
+    """
 
     @smart_doorbell_client.marshal_with(doorbell_ring)
     @smart_doorbell_client.expect(doorbell_ring)
@@ -34,6 +39,7 @@ subscription = smart_doorbell_client.inherit('Subscription', {
 })
 
 
+@smart_doorbell_client.route("/subscription")
 class Subscription(Resource):
 
     @smart_doorbell_client.marshal_with(subscription)
@@ -59,6 +65,7 @@ class DoorbellButton(Resource):
         # Defining data to send as subscription (sound file, notification message, doorbell button - as index)
         print("post of DoorbellRing has been called")
         return doorbell_button, 200, {'Access-Control-Allow-Origin': '*'}
+
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0")
