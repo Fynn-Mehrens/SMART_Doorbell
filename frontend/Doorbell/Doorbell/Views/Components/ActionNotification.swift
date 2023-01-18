@@ -34,7 +34,7 @@ struct ActionNotification: View {
             }
             .padding(20)
             .foregroundColor(Color.white)
-            .background(Color.lockGradient)
+            .background(Color.gray)
             .backgroundBlur(radius: 10, opaque: true)
             .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
             .padding()

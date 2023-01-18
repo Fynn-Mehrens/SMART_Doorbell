@@ -15,19 +15,7 @@ struct ActionModel: Hashable {
 let menuItems: [ActionModel] = [
     ActionModel(icon: "person.circle.fill", text: "Profil"),
     ActionModel(icon: "bell.fill", text: "Notifications"),
-    ActionModel(icon: "power.circle.fill", text: "Activate/Deactivate")
+    ActionModel(icon: "gearshape.fill", text: "Subscribe"),
+    ActionModel(icon: "power.circle.fill", text: "Activate/Deactivate"),
+    ActionModel(icon: "rectangle.portrait.and.arrow.forward", text: "Logout")
 ]
-
-let quickShortcuts: [ActionModel] = [
-    ActionModel(icon: "questionmark", text: "Test"),
-    ActionModel(icon: "questionmark", text: "Test"),
-    ActionModel(icon: "questionmark", text: "Test"),
-    ActionModel(icon: "questionmark", text: "Test")
-]
-
-let recentItems: [ActionModel] = [
-    ActionModel(icon: "questionmark", text: "Test"),
-    ActionModel(icon: "questionmark", text: "Test"),
-    ActionModel(icon: "questionmark", text: "Test")
-]
-

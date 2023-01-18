@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ApplicationSwitcher: View {
+    
     @EnvironmentObject var vm: UserStateViewModel
-
+    
     var body: some View {
         if (vm.isLoggedIn) {
                 ContentView()
         } else {
             LoginScreen()
         }
-
+        
     }
 }

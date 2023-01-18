@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfilView: View {
     var profilName: String
+    
     var body: some View {
         VStack {
             ImageView()

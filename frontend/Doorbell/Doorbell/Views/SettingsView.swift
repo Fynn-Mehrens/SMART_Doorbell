@@ -39,7 +39,6 @@ struct SettingsView: View {
             }
             Spacer()
         }
-        .frame(maxWidth:.infinity, maxHeight: .infinity)
         .background(Color.background)
         .foregroundColor(Color.white)
         .navigationBarHidden(true)
