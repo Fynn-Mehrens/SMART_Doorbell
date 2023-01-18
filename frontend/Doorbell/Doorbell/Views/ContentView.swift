@@ -11,7 +11,6 @@ struct ContentView: View {
     @EnvironmentObject var vm: UserStateViewModel
     @State private var icon = ""
     @State private var text = ""
-    var profilName: String
     
     var body: some View {
         if (vm.isBusy) {
@@ -31,20 +30,7 @@ struct ContentView: View {
                     
                     List {
                         Menu(sIcon: $icon, sText: $text, views: menuViews, items: menuItems)
-                        Button(action: {
-                            Task.init {
-                                await vm.signOut()
-                            }
-                            
-                        }) {
-                            HStack {
-                                Image(systemName: "rectangle.portrait.and.arrow.forward")
-                                    .imageScale(.large)
-                                    .frame(width: 44, height: 44)
-                                Text("Logout")
-                                
-                            }
-                        }.foregroundColor(Color.white)
+                        LogoutButton()
                         
                     }.scrollDisabled(true)
                 }
@@ -57,7 +43,7 @@ struct ContentView: View {
 struct ContenView_Previews: PreviewProvider {
     static let userStateViewModel = UserStateViewModel()
     static var previews: some View {
-        ContentView(profilName: "Max")
+        ContentView()
             .environmentObject(userStateViewModel)
         
     }

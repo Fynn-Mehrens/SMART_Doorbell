@@ -14,7 +14,7 @@ struct ApplicationSwitcher: View {
     
     var body: some View {
         if (vm.isLoggedIn) {
-                ContentView(profilName: profileName)
+                ContentView()
         } else {
             LoginScreen()
         }

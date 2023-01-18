@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @Environment(\.presentationMode) var presentation
+    //@Environment(\.presentationMode) var presentation
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 20){
+        Text("Settings")
+       /* VStack(alignment: .leading, spacing: 20){
             HStack {
                 Button(action: {
                     self.presentation.wrappedValue.dismiss()
@@ -41,7 +42,7 @@ struct SettingsView: View {
         }
         .background(Color.background)
         .foregroundColor(Color.white)
-        .navigationBarHidden(true)
+        .navigationBarHidden(true)*/
     }
 }
 

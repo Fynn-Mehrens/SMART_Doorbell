@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-func isValidEmail(_ email: String) -> Bool {
-    let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
-    let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-    return emailPred.evaluate(with: email)
-}
-
-
 struct LoginScreen: View {@EnvironmentObject var vm: UserStateViewModel
     @State var email = ""
     @State var password = ""
@@ -68,39 +60,6 @@ struct LoginScreen: View {@EnvironmentObject var vm: UserStateViewModel
             }
         }.padding()
 
-    }
-}
-
-struct WelcomeText: View {
-    var body: some View {
-        return Text("Welcome!")
-            .font(.largeTitle)
-            .fontWeight(.semibold)
-            .padding(.bottom, 20)
-        
-    }
-}
-
-struct ImageView: View {
-    var body: some View {
-        return Image("userImage")
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .frame(width: 150, height: 150)
-            .clipped()
-            .cornerRadius(150)
-    }
-}
-
-struct LoginButtonContent: View {
-    var body: some View {
-        return Text("LOGIN")
-            .font(.headline)
-            .foregroundColor(.white)
-            .padding()
-            .frame(width: 220, height: 60)
-            .background(Color.black)
-            .cornerRadius(15.0)
     }
 }
 
