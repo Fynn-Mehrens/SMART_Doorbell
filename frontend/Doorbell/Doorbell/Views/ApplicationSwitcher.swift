@@ -10,10 +10,11 @@ import SwiftUI
 struct ApplicationSwitcher: View {
     
     @EnvironmentObject var vm: UserStateViewModel
+    var profileName: String
     
     var body: some View {
         if (vm.isLoggedIn) {
-                ContentView()
+                ContentView(profilName: profileName)
         } else {
             LoginScreen()
         }

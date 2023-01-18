@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeHeader: View {
     @EnvironmentObject var vm: UserStateViewModel
+    var profilName: String
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 10) {
@@ -21,18 +23,13 @@ struct HomeHeader: View {
                     .foregroundColor(Color.white)
                     .clipShape(Capsule())
                 
-                Text("Test")
+                Text(profilName)
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
             }
             Spacer()
             HStack{
-                NavigationLink (
-                    destination: LockView()
-                ) {
-                    GeneralButton(icon: "lock.fill")
-                }
                 NavigationLink (
                     destination: SettingsView()
                 ) {
@@ -57,6 +54,6 @@ struct HomeHeader: View {
 
 struct HomeHeader_Previews: PreviewProvider {
     static var previews: some View {
-        HomeHeader()
+        HomeHeader(profilName: "Max")
     }
 }

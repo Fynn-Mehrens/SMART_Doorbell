@@ -13,7 +13,7 @@ struct DoorbellApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ApplicationSwitcher()
+            ApplicationSwitcher(profileName: "Max Mustermann")
                 .navigationViewStyle(.stack)
                 .environmentObject(userStateViewModel)
         }

@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var openNotification = false
     @State private var title = ""
     @State private var icon = ""
+    var profilName: String
     
     var body: some View {
         if (vm.isBusy) {
@@ -20,7 +21,7 @@ struct ContentView: View {
             NavigationView {
                 VStack{
                     ImageView()
-                    HomeHeader()
+                    HomeHeader(profilName: profilName)
                         .padding()
                     Divider()
                         .background(Color.white)
@@ -33,12 +34,16 @@ struct ContentView: View {
                     if openNotification {
                         if (title == "Profil") {
                             NavigationLink("Show Profil") {
-                                ProfilView(profilName: "Max Mustermann")
+                                ProfilView(profilName: profilName)
                             }
                         } else if (title == "Notifications") {
                             NavigationLink("Show Notification Settings") {
-                                ProfilView(profilName: "Max Mustermann")
+                                SettingsView()
                             }
+                        } else if (title == "Logout") {
+                            //Task{
+                                //await vm.signOut()
+                            //}
                         } else {
                             ActionNotification(open: $openNotification, icon: icon, text: title)
                                 .zIndex(1)
@@ -55,7 +60,7 @@ struct ContentView: View {
 struct ContenView_Previews: PreviewProvider {
     static let userStateViewModel = UserStateViewModel()
     static var previews: some View {
-        ContentView()
+        ContentView(profilName: "Max")
             .environmentObject(userStateViewModel)
         
     }
