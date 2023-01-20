@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-var profilName = "Cora Bleier"
-
 struct MenuItem: View {
     var newView: AnyView
     var icon: String

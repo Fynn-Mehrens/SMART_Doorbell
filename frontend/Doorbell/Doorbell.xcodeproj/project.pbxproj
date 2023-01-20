@@ -21,6 +21,11 @@
 		9BAC07D629786ECF006EBB12 /* FormatChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC07D529786ECF006EBB12 /* FormatChecks.swift */; };
 		9BAC07D829787005006EBB12 /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC07D729787005006EBB12 /* MenuItems.swift */; };
 		9BAC07DA2978704A006EBB12 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC07D92978704A006EBB12 /* Menu.swift */; };
+		9BAC07DC29787607006EBB12 /* EditMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC07DB29787607006EBB12 /* EditMessageView.swift */; };
+		9BAC07DE29787D5A006EBB12 /* ChooseSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC07DD29787D5A006EBB12 /* ChooseSoundView.swift */; };
+		9BAC07E0297887BA006EBB12 /* ChangeScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC07DF297887BA006EBB12 /* ChangeScheduleView.swift */; };
+		9BAC07E2297887C5006EBB12 /* ForwardNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC07E1297887C5006EBB12 /* ForwardNotificationView.swift */; };
+		9BAC07E4297887CE006EBB12 /* ForwardSchedulingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC07E3297887CE006EBB12 /* ForwardSchedulingView.swift */; };
 		9BB49BF22959B7870009D111 /* UserStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49BF12959B7870009D111 /* UserStateViewModel.swift */; };
 		9BB49BF42959B7CC0009D111 /* ApplicationSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49BF32959B7CC0009D111 /* ApplicationSwitcher.swift */; };
 		9BB49BF62959C1BD0009D111 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB49BF52959C1BD0009D111 /* LoginScreen.swift */; };
@@ -66,6 +71,11 @@
 		9BAC07D529786ECF006EBB12 /* FormatChecks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatChecks.swift; sourceTree = "<group>"; };
 		9BAC07D729787005006EBB12 /* MenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
 		9BAC07D92978704A006EBB12 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		9BAC07DB29787607006EBB12 /* EditMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMessageView.swift; sourceTree = "<group>"; };
+		9BAC07DD29787D5A006EBB12 /* ChooseSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSoundView.swift; sourceTree = "<group>"; };
+		9BAC07DF297887BA006EBB12 /* ChangeScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeScheduleView.swift; sourceTree = "<group>"; };
+		9BAC07E1297887C5006EBB12 /* ForwardNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardNotificationView.swift; sourceTree = "<group>"; };
+		9BAC07E3297887CE006EBB12 /* ForwardSchedulingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardSchedulingView.swift; sourceTree = "<group>"; };
 		9BB49BF12959B7870009D111 /* UserStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateViewModel.swift; sourceTree = "<group>"; };
 		9BB49BF32959B7CC0009D111 /* ApplicationSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSwitcher.swift; sourceTree = "<group>"; };
 		9BB49BF52959C1BD0009D111 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
@@ -109,6 +119,7 @@
 				9BB49BF52959C1BD0009D111 /* LoginScreen.swift */,
 				9BB49C04295CBC910009D111 /* SettingsView.swift */,
 				9BB49C272961F0600009D111 /* ProfilView.swift */,
+				9BAC07DB29787607006EBB12 /* EditMessageView.swift */,
 				9B37E7BA2959A8350093271B /* Models */,
 			);
 			path = Views;
@@ -127,6 +138,9 @@
 		9BA36B9B2949E0AA00213E01 = {
 			isa = PBXGroup;
 			children = (
+				9BAC07E3297887CE006EBB12 /* ForwardSchedulingView.swift */,
+				9BAC07E1297887C5006EBB12 /* ForwardNotificationView.swift */,
+				9BAC07DF297887BA006EBB12 /* ChangeScheduleView.swift */,
 				9BA36BA62949E0AA00213E01 /* Doorbell */,
 				9BA36BB82949E0AC00213E01 /* DoorbellTests */,
 				9BA36BC22949E0AC00213E01 /* DoorbellUITests */,
@@ -191,6 +205,7 @@
 				9BAC07D329786E7E006EBB12 /* LoginButton.swift */,
 				9BAC07D92978704A006EBB12 /* Menu.swift */,
 				9BAC07C829784AEF006EBB12 /* MenuItem.swift */,
+				9BAC07DD29787D5A006EBB12 /* ChooseSoundView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -328,19 +343,24 @@
 				9BAC07D229786E69006EBB12 /* ImageView.swift in Sources */,
 				9BAC07CC29786A53006EBB12 /* LogoutButton.swift in Sources */,
 				9BAC07D829787005006EBB12 /* MenuItems.swift in Sources */,
+				9BAC07E2297887C5006EBB12 /* ForwardNotificationView.swift in Sources */,
 				9BAC07D029786E34006EBB12 /* WelcomeText.swift in Sources */,
 				9BB49C282961F0600009D111 /* ProfilView.swift in Sources */,
+				9BAC07E0297887BA006EBB12 /* ChangeScheduleView.swift in Sources */,
 				9BB49C05295CBC910009D111 /* SettingsView.swift in Sources */,
 				9BAC07C929784AEF006EBB12 /* MenuItem.swift in Sources */,
 				9BB49C1B295CC60F0009D111 /* HomeHeader.swift in Sources */,
 				9BB49BF42959B7CC0009D111 /* ApplicationSwitcher.swift in Sources */,
 				9BB49BF62959C1BD0009D111 /* LoginScreen.swift in Sources */,
 				9BAC07DA2978704A006EBB12 /* Menu.swift in Sources */,
+				9BAC07DC29787607006EBB12 /* EditMessageView.swift in Sources */,
 				9BA36BA82949E0AA00213E01 /* DoorbellApp.swift in Sources */,
 				9BB49BF82959C6F50009D111 /* ContentView.swift in Sources */,
 				9BB49BF22959B7870009D111 /* UserStateViewModel.swift in Sources */,
+				9BAC07E4297887CE006EBB12 /* ForwardSchedulingView.swift in Sources */,
 				9BAC07D429786E7E006EBB12 /* LoginButton.swift in Sources */,
 				9BAC07D629786ECF006EBB12 /* FormatChecks.swift in Sources */,
+				9BAC07DE29787D5A006EBB12 /* ChooseSoundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
