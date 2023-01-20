@@ -1,4 +1,8 @@
 
 frontend/Doorbell/.DS_Store
 *.xcuserstate
-frontend/Doorbell/.DS_Store
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/SMART_Doorbell.iml
+.idea/vcs.xml
