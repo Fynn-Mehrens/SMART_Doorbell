@@ -11,10 +11,10 @@ struct LoginButtonContent: View {
     var body: some View {
         return Text("LOGIN")
             .font(.headline)
-            .foregroundColor(.white)
+            .foregroundColor(.black)
             .padding()
             .frame(width: 220, height: 60)
-            .background(Color.black)
+            .background(Color.white)
             .cornerRadius(15.0)
     }
 }

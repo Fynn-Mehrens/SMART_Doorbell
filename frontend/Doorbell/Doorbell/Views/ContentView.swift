@@ -22,7 +22,6 @@ struct ContentView: View {
                     Text(profilName)
                         .font(.largeTitle)
                         .fontWeight(.semibold)
-                        .foregroundColor(Color.white)
                     
                     Divider()
                         .background(Color.white)
