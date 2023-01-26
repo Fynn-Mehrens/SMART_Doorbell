@@ -1,4 +1,4 @@
 class DoorbellRing:
 
-    def __init__(self, timestamp, sound_file):
-        self._timestamp = timestamp
+    def __init__(self, time):
+        self._timestamp = time

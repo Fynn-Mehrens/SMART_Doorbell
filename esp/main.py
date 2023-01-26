@@ -9,16 +9,14 @@ def button_handler(pin):
   button_pressed = pin
 
 # configure pushbuttons as interrupts
-button1 = Pin(15, Pin.IN) #clear
+button1 = Pin(14, Pin.IN) #red
 button1.irq(trigger=Pin.IRQ_RISING, handler=button_handler)
-button2 = Pin(14, Pin.IN) #red
+button2 = Pin(12, Pin.IN) #green
 button2.irq(trigger=Pin.IRQ_RISING, handler=button_handler)
-button3 = Pin(12, Pin.IN) #green
+button3 = Pin(13, Pin.IN) #blue
 button3.irq(trigger=Pin.IRQ_RISING, handler=button_handler)
-button4 = Pin(13, Pin.IN) #blue
-button4.irq(trigger=Pin.IRQ_RISING, handler=button_handler)
 
-button_pressed = button1
+button_pressed = None
 
 
 # LED strip configuration
@@ -58,22 +56,20 @@ def white():
     np[i] = (255, 255, 255)
     np.write()
 
-url = "192.168.178.31:5000" # TODO
+url = "http://192.168.178.31:5000" # local IP address of the server machine
 
 # TODO: What are the assumptions on the buttons?
 while True:
   if button_pressed == button1:
-    white()
-    requests.get(url + "/doorbell_ring/1")
-  elif button_pressed == button2:
     red()
     requests.get(url + "/doorbell_ring/1")
-  elif button_pressed == button3:
+  elif button_pressed == button2:
     green()
-    requests.get(url + "/doorbell_ring/1")
-  elif button_pressed == button4:
+    requests.get(url + "/doorbell_ring/2")
+    print("Slot 2 pressed")
+  elif button_pressed == button3:
     blue()
-    requests.get(url + "/doorbell_ring/1")
+    requests.get(url + "/doorbell_ring/3")
   else:
     clear()
 
