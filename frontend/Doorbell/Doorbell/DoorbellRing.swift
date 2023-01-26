@@ -8,5 +8,5 @@
 import Foundation
 
 public class DoorbellRing: Codable {
-    var timestamp: String = ""
+    var time: String = ""
 }

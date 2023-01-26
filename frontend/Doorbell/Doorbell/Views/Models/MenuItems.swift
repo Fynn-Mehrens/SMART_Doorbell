@@ -19,14 +19,14 @@ var menuViews: [AnyView] = [
     AnyView(ProfilView(profilName: profilName)),
     AnyView(SettingsView()),
     AnyView(Text("Subscribe")),
-    AnyView(Text("Activate/Deactivate"))
+    AnyView(Text("Activate/Deactivate")),
 ]
 
 let menuItems: [Item] = [
     Item(icon: "person.circle.fill", text: "Profil"),
     Item(icon: "bell.fill", text: "Notifications"),
     Item(icon: "gearshape.fill", text: "Subscribe"),
-    Item(icon: "power.circle.fill", text: "Activate/Deactivate")
+    Item(icon: "power.circle.fill", text: "Activate/Deactivate"),
 ]
 
 var settingsView: [AnyView] = [

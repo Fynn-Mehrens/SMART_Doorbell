@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B663FFA297B211A00D62412 /* APIRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B663FF9297B211A00D62412 /* APIRequests.swift */; };
+		9B663FFC297B273200D62412 /* DoorbellRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B663FFB297B273200D62412 /* DoorbellRing.swift */; };
 		9BA36BA82949E0AA00213E01 /* DoorbellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA36BA72949E0AA00213E01 /* DoorbellApp.swift */; };
 		9BA36BAC2949E0AB00213E01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA36BAB2949E0AB00213E01 /* Assets.xcassets */; };
 		9BA36BB02949E0AB00213E01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BA36BAF2949E0AB00213E01 /* Preview Assets.xcassets */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B663FF9297B211A00D62412 /* APIRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequests.swift; sourceTree = "<group>"; };
+		9B663FFB297B273200D62412 /* DoorbellRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorbellRing.swift; sourceTree = "<group>"; };
 		9BA36BA42949E0AA00213E01 /* Doorbell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doorbell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA36BA72949E0AA00213E01 /* DoorbellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoorbellApp.swift; sourceTree = "<group>"; };
 		9BA36BAB2949E0AB00213E01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +124,9 @@
 				9BB49C04295CBC910009D111 /* SettingsView.swift */,
 				9BB49C272961F0600009D111 /* ProfilView.swift */,
 				9BAC07DB29787607006EBB12 /* EditMessageView.swift */,
+				9BAC07E3297887CE006EBB12 /* ForwardSchedulingView.swift */,
+				9BAC07E1297887C5006EBB12 /* ForwardNotificationView.swift */,
+				9BAC07DF297887BA006EBB12 /* ChangeScheduleView.swift */,
 				9B37E7BA2959A8350093271B /* Models */,
 			);
 			path = Views;
@@ -138,9 +145,6 @@
 		9BA36B9B2949E0AA00213E01 = {
 			isa = PBXGroup;
 			children = (
-				9BAC07E3297887CE006EBB12 /* ForwardSchedulingView.swift */,
-				9BAC07E1297887C5006EBB12 /* ForwardNotificationView.swift */,
-				9BAC07DF297887BA006EBB12 /* ChangeScheduleView.swift */,
 				9BA36BA62949E0AA00213E01 /* Doorbell */,
 				9BA36BB82949E0AC00213E01 /* DoorbellTests */,
 				9BA36BC22949E0AC00213E01 /* DoorbellUITests */,
@@ -161,11 +165,13 @@
 		9BA36BA62949E0AA00213E01 /* Doorbell */ = {
 			isa = PBXGroup;
 			children = (
+				9B663FFB297B273200D62412 /* DoorbellRing.swift */,
 				9BA36BA72949E0AA00213E01 /* DoorbellApp.swift */,
 				9B37E78029599E900093271B /* Views */,
 				9BA36BAB2949E0AB00213E01 /* Assets.xcassets */,
 				9BA36BAD2949E0AB00213E01 /* Doorbell.entitlements */,
 				9BA36BAE2949E0AB00213E01 /* Preview Content */,
+				9B663FF9297B211A00D62412 /* APIRequests.swift */,
 			);
 			path = Doorbell;
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 				9BAC07CC29786A53006EBB12 /* LogoutButton.swift in Sources */,
 				9BAC07D829787005006EBB12 /* MenuItems.swift in Sources */,
 				9BAC07E2297887C5006EBB12 /* ForwardNotificationView.swift in Sources */,
+				9B663FFC297B273200D62412 /* DoorbellRing.swift in Sources */,
 				9BAC07D029786E34006EBB12 /* WelcomeText.swift in Sources */,
 				9BB49C282961F0600009D111 /* ProfilView.swift in Sources */,
 				9BAC07E0297887BA006EBB12 /* ChangeScheduleView.swift in Sources */,
@@ -356,6 +363,7 @@
 				9BAC07DC29787607006EBB12 /* EditMessageView.swift in Sources */,
 				9BA36BA82949E0AA00213E01 /* DoorbellApp.swift in Sources */,
 				9BB49BF82959C6F50009D111 /* ContentView.swift in Sources */,
+				9B663FFA297B211A00D62412 /* APIRequests.swift in Sources */,
 				9BB49BF22959B7870009D111 /* UserStateViewModel.swift in Sources */,
 				9BAC07E4297887CE006EBB12 /* ForwardSchedulingView.swift in Sources */,
 				9BAC07D429786E7E006EBB12 /* LoginButton.swift in Sources */,
