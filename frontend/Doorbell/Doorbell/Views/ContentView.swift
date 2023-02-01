@@ -36,18 +36,25 @@ struct ContentView: View {
                             LogoutButton()
                             HStack {
                                 Text(notification)
-                                /*ForEach(Array(dbRingValue.enumerated()), id: \.offset) { index, item in
+                                ForEach(Array(dbRingValue.enumerated()), id: \.offset) { index, item in
                                     Text(item.time)
-                                }*/
-                            }.onAppear {
+                                }
+                            }.task {
+                                do {
+                                    getDoorbellRings()
+                                    print("Here")
+                                    if !dbRingValue.isEmpty {
+                                        print(dbRingValue[1].time)}
+                                    else {
+                                        print("No Data to fetch")
+                                    }
+                                }
+                            }
+                            .onAppear {
                                 print(notification)
                                 notification = "The doorbell has been rung. - 7s ago"
+                                
                             }
-                        }.onAppear {
-                            getDoorbellRings()
-                            print("Here")
-                            if !dbRingValue.isEmpty {
-                                print(dbRingValue[1].time)}
                         }
                         
                     }.scrollDisabled(true)

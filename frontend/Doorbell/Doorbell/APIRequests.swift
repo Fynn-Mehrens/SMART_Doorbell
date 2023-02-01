@@ -8,7 +8,7 @@
 import Foundation
 
 public func get(_ completion: @escaping ([DoorbellRing])->Void) {
-    let url: URL = URL(string: "http://192.168.178.31:5000/doorbell_notification/1")!
+    let url: URL = URL(string: "http://172.20.10.4:5000/doorbell_notification/2")!
     var request = URLRequest(url: url)
     request.httpMethod = "GET"
     let session = URLSession.shared
